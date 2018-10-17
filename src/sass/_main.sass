@@ -1,4 +1,4 @@
-.main
+.main-scrin
   padding-top: 60px
   padding-bottom: 67px
   color: $text-color-light
@@ -6,6 +6,7 @@
   background-size: cover
 
 .header
+  margin-bottom: 125px
   &-wrap
     display: flex
     flex-direction: row
@@ -14,6 +15,7 @@
       display: flex
       flex-direction: row
   &-text
+    font-family: 'ProximaNova'
     max-width: 320px
     font-size: 16px
     font-weight: 400
@@ -23,6 +25,7 @@
   &-contacts
     display: flex
     flex-direction: row
+    align-items: center
     &-phone
       display: flex
       flex-direction: column
@@ -37,3 +40,90 @@
         color: $text-color-light
         text-decoration: none
         cursor: pointer
+  &-button
+    padding: 12px 24px
+    font-size: 14px
+    font-weight: 700
+
+
+.main
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 90px
+  &-title
+    font-size: 48px
+    font-weight: 700
+    line-height: 24px
+  &-text
+    max-width: 665px
+    &__title
+      margin-bottom: 23px
+    &__subtitle
+      font-size: 24px
+      font-weight: 400
+      line-height: 24px
+      margin-bottom: 15px
+    &__descr
+      font-size: 18px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 33px
+  &-button
+    padding: 20px 35px
+    font-size: 16px
+
+  &-form
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      background: url('../img/main/border.png') center no-repeat
+      width: 360px
+      height: 310px
+      top: -35px
+      opacity: 0.5
+      z-index: -1
+    &s
+      display: flex
+      flex-direction: column
+      justify-content: center
+      text-align: center
+      margin-bottom: 15px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    align-items: center
+    &__text
+      max-width: 255px
+      margin-bottom: 30px
+      &_title
+        font-size: 22px
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+        margin-bottom: 11px
+    &__input
+      padding: 17px 20px
+      border-radius: 35px
+      outline: none
+      width: 300px
+      border: none
+      &-one
+        margin-bottom: 15px 
+        background: #ffffff url('../img/main/user_icon.png') no-repeat
+        background-position: 20px
+      &-two
+        margin-bottom: 15px 
+        background: #ffffff url('../img/main/phone_icon.png') no-repeat
+        background-position: 20px
+    &__btn
+      padding: 19px 38px
+      font-family: 
+  &-arrow
+    display: flex
+    justify-content: center
+    cursor: pointer
