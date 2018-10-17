@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Proxima';
+  src: local('Proxima '), local('Roboto-Thin'), 
+    url('Robotothin.woff2') format('woff2'), 
+    url('Robotothin.woff') format('woff'), 
+    url('Robotothin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}

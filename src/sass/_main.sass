@@ -1,9 +1,39 @@
 .main
-  color: #ffffff
   padding-top: 60px
+  padding-bottom: 67px
+  color: $text-color-light
   background: url('../img/main/main-bg.png') center no-repeat
   background-size: cover
 
 .header
+  &-wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &-logo
+      display: flex
+      flex-direction: row
+  &-text
+    max-width: 320px
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
   &-logo
-    
+    margin-right: 60px
+  &-contacts
+    display: flex
+    flex-direction: row
+    &-phone
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      margin-right: 26px
+      &__tel
+        font-family: 'Roboto', sans-serif
+        font-size: 19px
+        font-weight: 700
+        line-height: 24px
+      &__link
+        color: $text-color-light
+        text-decoration: none
+        cursor: pointer
