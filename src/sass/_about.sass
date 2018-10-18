@@ -4,11 +4,12 @@
   &-wrap
     display: flex
     justify-content: space-between
+    align-items: center
   &-text
     margin-bottom: 26px
     max-width: 560px
     &__descr
-      color: #5b5b5b
+      color: $text-color-gray
       font-size: 18px
       font-weight: 300
       line-height: 28px
@@ -22,7 +23,8 @@
       &-block
         position: relative
         display: flex
-        align-items: flex-end
+        flex-direction: column
+        justify-content: flex-end
         height: 112px
         &_rectangle
           width: 265px
@@ -39,5 +41,14 @@
           display: inline-block
           width: 102px
           height: 115px
+        &_text
+          position: absolute
+          color: $text-color-dark
+          font-size: 18px
+          font-weight: 700
+          line-height: 30px
+          width: 236px
   &-video
-    width: 555px
+    &__main
+      width: 555px
+      height: 360px

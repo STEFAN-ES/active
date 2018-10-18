@@ -30,10 +30,14 @@
       position: relative
       top: -15px
 
+
 @media (max-width: 1200px)
   .main
     &-text
       max-width: 540px
+  .about
+    &-wrap
+      flex-direction: column
 
 
 @media (max-width: 992px)
@@ -45,6 +49,18 @@
     text-align: center
     &-text
       margin-bottom: 50px
+
+  .about
+    &-text
+      &__descr
+        text-align: center
+  
+  .features
+    &-text
+    &-block
+      flex-basis: 49%
+
+  
 @media (max-width: 768px)
   .header
     &-wrap
@@ -57,6 +73,33 @@
         &__tel
           font-size: 16px
           font-weight: 700
+  .about
+    &-text
+      max-width: 480px
+      &__descr
+        text-align: center
+      &__features
+        flex-direction: column
+        &-block
+          &:first-child
+            margin-bottom: 50px
+          &_rectangle
+            width: 100%
+            height: 50%
+            bottom: 50%
+            transform: translateY(-50%)
+          &_img
+            left: 50%
+            transform: translateX(-50%)
+          &_text
+            text-align: center
+            width: 135px
+            font-size: 14px
+            line-height: 16px
+            left: -15px
+    &-video
+      &__main
+        max-width: 480px          
 @media (max-width: 576px)
   .hidden-576
     display: none
@@ -93,12 +136,12 @@
     &-title
       font-size: 30px
     &-form
-      width: 280px
+      width: 258px
       &::before
         content: ''
         position: absolute
         display: block
-        width: 105%
+        width: 100%
         height: 360px
         background: rgba(255, 255, 255, .4)
         top: 50%
@@ -112,3 +155,38 @@
         padding: 15px 28px
         font-size: 12px
         max-width: 180px
+    
+  .about
+    &-text
+      max-width: 258px
+      &__descr
+        text-align: center
+      &__features
+        flex-direction: column
+        &-block
+          &:first-child
+            margin-bottom: 50px
+          &_rectangle
+            width: 100%
+            height: 50%
+            bottom: 50%
+            transform: translateY(-50%)
+          &_img
+            left: 50%
+            transform: translateX(-50%)
+          &_text
+            text-align: center
+            width: 135px
+            font-size: 14px
+            line-height: 16px
+            left: -15px
+    &-video
+      width: 258px
+      &__main
+        width: 260px
+        height: 260px
+    
+  .features
+    &-text
+    &-block
+      flex-basis: 100%
