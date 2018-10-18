@@ -50,9 +50,15 @@ input {
   font-weight: 700;
 }
 
+.text-block {
+  display: inline-block;
+}
+
 @media (min-width: 992px) {
   .button:hover {
-    background-color: #ffd305;
+    background-color: #ffbb38;
+    -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.19);
+            box-shadow: 0 0 13px rgba(0, 0, 0, 0.19);
   }
   .section-title {
     text-align: center;
@@ -484,8 +490,117 @@ input {
 }
 
 .features-btn {
-  padding: 21px 45px;
+  padding: 20px 33px;
   font-size: 15px;
+}
+
+.answerWhy {
+  padding-top: 70px;
+  padding-bottom: 76px;
+}
+
+.answerWhy-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+  max-width: 360px;
+  height: 188px;
+  border: 1px solid #eeedee;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.answerWhy-block__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.answerWhy-block__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 13px;
+}
+
+.answerWhy-block__text {
+  color: #5b5b5b;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.14px;
+}
+
+.sertificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sertificate-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 13px;
+  max-width: 150px;
+  border: 1px solid #eeedee;
+  margin-bottom: 16px;
+}
+
+.sertificate-img {
+  width: 150px;
+}
+
+.sertificate-img img {
+  width: 100%;
+}
+
+.sertificate-text {
+  color: #5b5b5b;
+  text-align: center;
+  max-width: 755px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .container {
@@ -568,6 +683,20 @@ input {
   .features-block {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
+  }
+  .answerWhy-block {
+    width: 360px;
+    margin-bottom: 15px;
+    border: none;
+  }
+  .answerWhy-block__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -762,6 +891,12 @@ input {
   .features-btn {
     font-size: 15px;
     padding: 17px 14px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .answerWhy-block {
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
