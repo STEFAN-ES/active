@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="main-scrin">
+  <div class="main-screen">
     <div class="container">
       <header class="header">
 
@@ -25,7 +25,7 @@
               <img src="img/header/logo.png" alt="#">
             </div>
 
-            <div class="header-text">
+            <div class="header-text hidden-mobile">
               Обучаем зарабатывать и инвестировать<br>
               на финансовых рынках с минимумом риска
             </div>
@@ -33,7 +33,7 @@
 
           <div class="header-contacts">
             <div class="header-contacts-phone">
-              <div class="header-contacts-phone__title">Есть вопросы?</div>
+              <div class="header-contacts-phone__title hidden-mobile">Есть вопросы?</div>
               <div class="header-contacts-phone__tel"><a href="tel:+75351111001" class="header-contacts-phone__link">+7
                   535 111 10 01</a></div>
             </div>
@@ -53,25 +53,32 @@
           <div class="main-text__subtitle">на интересном и перспективном деле</div>
           <div class="main-text__descr">Мы бесплатно научим Вас как всего за 10 часов начать зарабатывать от 100 000
             рублей в месяц под строгим контролем профессионалов.</div>
-          <div class="main-text__button">
+          <div class="main-text__button hidden-mobile">
             <button class="button main-button">Начать зарабатывать!</button>
           </div>
         </div>
+
 
         <div class="main-form">
           <div class="main-form__text">
             <div class="main-form__text_title">Оставьте заявку</div>
             <div class="main-form__text_descr">Чтобы получить бесплатный пакет материалов о финансовом рынке</div>
           </div>
+          <!-- /.main-form__text -->
+
           <form action="#" class="main-forms">
-            <input type="text" name="user_name" class="main-form__input main-form__input-one" placeholder="        Ваше имя"
+            <input type="text" name="user_name" class="main-form__input main-form__input-one" placeholder="       Ваше имя"
               required>
-            <input type="text" name="user_phone" class="main-form__input main-form__input-two" placeholder="       Ваш номер телефона" required>
+            <input type="text" name="user_phone" class="main-form__input main-form__input-two" placeholder="       Ваш номер телефона"
+              required>
           </form>
+          <!-- /.main-form -->
+
           <div class="main-form__button">
             <button class="button main-form__btn">Получить материалы</button>
           </div>
         </div>
+        <!-- /.main-form -->
       </div>
 
     </div>
@@ -81,6 +88,61 @@
     </div>
 
   </div>
+
+
+  <div class="about">
+    <div class="container">
+      <h2 class="section-title">О нашей компании</h2><!-- ./section-title -->
+      <div class="about-wrap">
+        <div class="about-text">
+          <div class="about-text__descr">
+            <div class="about-text__descr-p about-text__descr-p_1">Консалтинговая компания ООО "Эктив Моней" – <span class="text-bold">партнер российского форекс-дилера ООО
+                «Финанс Групп»</span>, имеющего лицензию Банка России на осуществление деятельности профессионального
+              участника рынка ценных бумаг.</div> 
+            <div class="about-text__descr-p about-text__descr-p_2"><span class="text-bold">Наша задача</span> – обучить клиентов эффективной работе с мировыми финансовыми
+              площадками, с помощью уникальной авторской методики.
+              Мы ведем работу по 2 основным направлениям:</div>
+          </div>
+          <!-- /.about-text__descr -->
+          <div class="about-text__features">
+            <div class="about-text__features-block">
+              <div class="about-text__features-block_rectangle about-text__features-block_rectangle-1">
+                  
+              </div>
+              <!-- /.about-text__features-block_rectangle -->
+              
+              <div class="about-text__features-block_img">
+                <img src="img/about/photo-1.jpg" alt="#">
+              </div>
+              <!-- /.about-text__features-block_img -->
+            </div>
+            <!-- /.about-text__features_block -->
+            <div class="about-text__features-block">
+                <div class="about-text__features-block_rectangle about-text__features-block_rectangle-2">
+                    
+                </div>
+                <!-- /.about-text__features-block_rectangle -->
+                <div class="about-text__features-block_img">
+                  <img src="img/about/photo-2.jpg" alt="#">
+                </div>
+                <!-- /.about-text__features-block_img -->
+              </div>
+              <!-- /.about-text__features_block -->
+          </div>
+          <!-- /.about-text__features -->
+        </div>
+        <!-- /.about-text -->
+
+        <div class="about-video">
+            <iframe width="560" height="360" src="https://www.youtube.com/embed/3wPeND2gvqc" frameborder="0" poster="img/about/video-bg.png" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!-- ./about-wrap -->
+    </div>
+    <!-- ./container -->
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>

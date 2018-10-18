@@ -6,6 +6,9 @@
   padding-left: 15px
   margin-right: auto
   margin-left: auto
+@media (min-width: 320px)
+  .container
+    max-width: 290px
 @media (min-width: 576px) 
   .container 
     max-width: 540px
@@ -19,10 +22,93 @@
   .container 
     max-width: 1170px
   
-  @media (min-width: 992px)
-    .main
-      &-form
-        right: 30px
-      &-text
-        position: relative
-        top: -15px
+@media (min-width: 992px)
+  .main
+    &-form
+      right: 30px
+    &-text
+      position: relative
+      top: -15px
+
+@media (max-width: 1200px)
+  .main
+    &-text
+      max-width: 540px
+
+
+@media (max-width: 992px)
+  .hidden-mobile
+    display: none
+
+  .main
+    flex-direction: column
+    text-align: center
+    &-text
+      margin-bottom: 50px
+@media (max-width: 768px)
+  .header
+    &-wrap
+      align-items: center
+    &-contacts
+      flex-direction: column
+      align-items: center
+      &-phone
+        margin-right: 0
+        &__tel
+          font-size: 16px
+          font-weight: 700
+@media (max-width: 576px)
+  .hidden-576
+    display: none
+  .main-screen
+    padding-top: 30px
+  .header
+    margin-bottom: 50px
+    &-wrap
+      align-items: center
+    &-logo
+      width: 100px
+      margin-right: 15px
+    &-contacts
+      flex-direction: column
+      align-items: center
+      &-phone
+        margin-right: 0
+        &__tel
+          font-size: 14px
+          font-weight: 500
+    &-button
+      padding: 6px 12px
+      font-size: 10px
+  
+  .main
+    margin-bottom: 80px
+    &-text
+      margin-bottom: 30px
+      &__title
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 20px
+
+    &-title
+      font-size: 30px
+    &-form
+      width: 280px
+      &::before
+        content: ''
+        position: absolute
+        display: block
+        width: 105%
+        height: 360px
+        background: rgba(255, 255, 255, .4)
+        top: 50%
+        transform: translateY(-50%)
+        opacity: 0.5
+        z-index: -1
+      &__input
+        width: 100%
+        text-align: center
+      &__btn
+        padding: 15px 28px
+        font-size: 12px
+        max-width: 180px
