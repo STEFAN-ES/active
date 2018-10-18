@@ -20,7 +20,7 @@
   font-family: 'ProximaNova';
   src: local('ProximaNova SemiBold '), local('ProximaNova-SemiBold'),  
     url('../fonts/ProximaNova-SemiBold.woff') format('woff'), 
-    url('../fonts/ProximaNova-SemiBold.ttf') format('truetype'),
+    url('../fonts/ProximaNova-Semibold.ttf') format('truetype'),
     url('../fonts/ProximaNova-SemiBold.eot') format('opentype');
   font-weight: 600;
   font-style: normal;
