@@ -18,10 +18,10 @@
 }
 @font-face {
   font-family: 'ProximaNova';
-  src: local('ProximaNova SemiBold '), local('ProximaNova-SemiBold'),  
-    url('../fonts/ProximaNova-SemiBold.woff') format('woff'), 
-    url('../fonts/ProximaNova-Semibold.ttf') format('truetype'),
-    url('../fonts/ProximaNova-SemiBold.eot') format('opentype');
+  src: local('ProximaNova SemiBold '), local('ProximaNovaCond-SemiBold'),  
+    url('../fonts/ProximaNovaCond-Semibold.woff') format('woff'), 
+    url('../fonts/ProximaNovaCond-Semibold.ttf') format('truetype'),
+    url('../fonts/ProximaNovaCond-SemiBold.eot') format('opentype');
   font-weight: 600;
   font-style: normal;
 }

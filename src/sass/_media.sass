@@ -71,10 +71,39 @@
         flex-direction: column
         align-items: center
   
+  .services
+    &-wrap
+      flex-direction: column
+      align-items: center
+    &-block
+      margin-bottom: 20px
+
   .feedback
     &-slider
       &__bottom
         max-width: 690px
+  
+  .contacts
+    &-wrap
+      flex-direction: column-reverse
+      align-items: center
+    &-map
+      margin-right: 0
+      max-width: 690px
+    &-text
+      width: 100%
+      align-items: center
+      text-align: center
+      margin-bottom: 30px
+    &-adress
+      align-items: center
+      margin-bottom: 20px
+    &-phone
+      align-items: center
+      margin-bottom: 20px
+    &-btn
+      &__block
+        align-items: center
   
 @media (max-width: 768px)
   .header
@@ -132,6 +161,20 @@
         max-width: 260px
       &__bottom
         max-width: 510px 
+  .offer
+    &-subtitle
+      text-align: center
+    &-form
+      &s
+        flex-direction: column
+      &__input
+        &:first-child
+          margin-bottom: 15px
+    &-btn
+      padding: 15px 25px
+  .contacts
+    &-map
+      max-width: 510px
   
 @media (max-width: 576px)
   .hidden-576
@@ -170,6 +213,8 @@
       font-size: 30px
     &-form
       width: 258px
+      &s
+        width: 100%
       &::before
         content: ''
         position: absolute
@@ -241,6 +286,20 @@
     &-slider
       &__bottom
         max-width: 290px
+  .services
+    &-block
+      width: 290px
+
+  .offer
+    &-form
+      &s
+        width: 260px
+    &-btn
+      padding: 15px 20px 
+  .contacts
+    &-map
+      width: 300px
+      max-width: 500px
 
 
 @media (min-width: 993px) and (max-width: 1200px)
@@ -249,6 +308,19 @@
       max-width: 300px
       &__wrap
 
+  .services
+    &-block
+      width: 300px
+  
+  .contacts
+    &-map
+      width: 630px
+@media (min-width: 769px)
+  .offer
+    &-form
+      &__input
+        &:first-child
+          margin-right: 10px
 
 @media (width: 1200px)
   .feedback /* костыль */

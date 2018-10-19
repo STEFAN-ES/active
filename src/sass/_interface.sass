@@ -34,6 +34,23 @@
     right: 0px
     background: url('../img/slider/arrow-right.png') center no-repeat
 
+.input
+  padding: 17px 20px
+  border-radius: 35px
+  outline: none
+  width: 300px
+  border: none
+  &-one 
+    background: #ffffff url('../img/main/user_icon.png') no-repeat
+    background-position: 20px
+  &-two 
+    background: #ffffff url('../img/main/phone_icon.png') no-repeat
+    background-position: 20px
+
+  
+  
+  
+  
 @media (min-width: 992px)
   .button
     &:hover
@@ -50,6 +67,14 @@
       height: 1px
       background: url('../img/title-after.png') center no-repeat
       margin-top: 15px
+  .offer-title
+    &::after
+      content: ''
+      display: block
+      height: 1px
+      background: url('../img/title-offer.png') center no-repeat
+      margin-top: 15px
+
 @media (max-width: 992px)
   .section-title
     margin-bottom: 25px
@@ -58,4 +83,7 @@
     font-size: 22px
     font-weight: 600
     margin-bottom: 20px
-  
+
+@media (max-width: 576px)
+  .input
+    width: 100%
