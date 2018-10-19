@@ -1,0 +1,65 @@
+.feedback
+  padding-top: 73px
+  padding-bottom: 80px
+  &-wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+  
+  &-bg
+    position: absolute
+    width: 1140px
+    height: 255px
+    top: 25%
+    z-index: -5
+    img
+      width: 100%
+  &-title
+    margin-bottom: 29px
+  &-slider
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 33px
+    &__top
+      display: flex
+      justify-content: center
+      max-width: 320px
+      margin-bottom: 18px
+      &-text
+        text-align: center
+        &__title
+          color: $text-color-dark
+          font-size: 18px
+          font-weight: 700
+          margin-bottom: 8px
+        &__subtitle
+          color: #404040
+          font-size: 16px
+          font-weight: 300
+      &-img
+        display: flex
+        justify-content: center
+        margin-bottom: 12px
+      .slick-slider
+        width: 150px
+    &__bottom
+      display: flex
+      justify-content: center
+      max-width: 745px
+      &-text
+        max-width: 745px
+        text-align: center
+        color: $text-color-gray
+        font-size: 16px
+        font-weight: 300
+        line-height: 22.14px
+        &-p
+          &:first-child
+            margin-bottom: 12px
+  &-btn
+    font-size: 15px
+    font-weight: 700
+    padding: 18px 45px
+  .container
+    position: relative

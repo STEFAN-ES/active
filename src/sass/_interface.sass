@@ -20,10 +20,25 @@
 .text-block
   display: inline-block
 
+.slider-arrow
+  position: absolute
+  top: 0
+  width: 18px
+  height: 70%
+  cursor: pointer
+  z-index: 9
+  &_left
+    left: 0
+    background: url('../img/slider/arrow-left.png') center no-repeat
+  &_right
+    right: 0px
+    background: url('../img/slider/arrow-right.png') center no-repeat
+
 @media (min-width: 992px)
   .button
     &:hover
       background-color: #ffbb38
+      border: 1px solid #ffbb38
       box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
   .section-title
     text-align: center

@@ -38,7 +38,9 @@
   .about
     &-wrap
       flex-direction: column
-
+  .feedback
+    &-bg
+      width: 930px
 
 @media (max-width: 992px)
   .hidden-mobile
@@ -68,6 +70,11 @@
       &__wrap
         flex-direction: column
         align-items: center
+  
+  .feedback
+    &-slider
+      &__bottom
+        max-width: 690px
   
 @media (max-width: 768px)
   .header
@@ -107,7 +114,24 @@
             left: -15px
     &-video
       &__main
-        max-width: 480px          
+        max-width: 480px     
+
+  .recruitment
+    &-wrap
+      flex-direction: column
+      align-items: center
+    &-text
+      margin-right: 0
+
+      text-align: center
+      margin-bottom: 20px    
+
+  .feedback
+    &-slider
+      &__top
+        max-width: 260px
+      &__bottom
+        max-width: 510px 
   
 @media (max-width: 576px)
   .hidden-576
@@ -150,7 +174,7 @@
         content: ''
         position: absolute
         display: block
-        width: 100%
+        width: 120%
         height: 360px
         background: rgba(255, 255, 255, .4)
         top: 50%
@@ -204,6 +228,19 @@
     &-btn
       font-size: 15px
       padding: 17px 14px
+  .recruitment
+    &-text
+      &__title
+        font-size: 22px
+        font-weight: 700
+        margin-bottom: 10px
+      &__descr
+        font-size: 16px
+        line-height: 20px
+  .feedback
+    &-slider
+      &__bottom
+        max-width: 290px
 
 
 @media (min-width: 993px) and (max-width: 1200px)
@@ -211,3 +248,9 @@
     &-block
       max-width: 300px
       &__wrap
+
+
+@media (width: 1200px)
+  .feedback /* костыль */
+    &-bg
+      width: 1140px
