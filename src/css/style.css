@@ -1591,6 +1591,15 @@ a {
   .features-block {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .features-block::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: url("../img/title-after.png") center no-repeat;
+    margin-top: 20px;
   }
   .features-btn {
     font-size: 15px;
