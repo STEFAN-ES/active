@@ -44,4 +44,5 @@ gulp.task( 'deploy', function () {
  
     return gulp.src( globs, { base: '.', buffer: false } )
         .pipe( conn.newer( '/www/web-verstach.ru/' ) ) // only upload newer files
-        .pipe( conn.dest( '/www/web-verstach.ru/' ) );
+        .pipe( conn.dest( '/www/web-verstach.ru/' ) )
+});

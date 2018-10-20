@@ -26,6 +26,10 @@ input {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button {
   font-family: 'ProximaNova';
   outline: none;
@@ -75,7 +79,7 @@ input {
 }
 
 .input {
-  padding: 17px 20px;
+  padding: 17px 20px 17px 45px;
   border-radius: 35px;
   outline: none;
   width: 300px;
@@ -117,6 +121,12 @@ input {
     height: 1px;
     background: url("../img/title-offer.png") center no-repeat;
     margin-top: 15px;
+  }
+  .tel {
+    text-decoration: none;
+  }
+  .tel:hover {
+    color: #ffbb38;
   }
 }
 
@@ -185,6 +195,7 @@ input {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  color: #ffffff;
 }
 
 .header-logo {
@@ -900,7 +911,7 @@ input {
   z-index: 1;
 }
 
-.offer::before {
+.offer::after {
   content: '';
   position: absolute;
   top: 0;
@@ -956,7 +967,7 @@ input {
 
 .contacts {
   padding-top: 75px;
-  padding-bottom: 77px;
+  padding-bottom: 75px;
 }
 
 .contacts-title {
@@ -996,7 +1007,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .contacts-adress__title {
@@ -1047,7 +1058,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .contacts-phone__title {
@@ -1090,6 +1101,10 @@ input {
   line-height: 22px;
 }
 
+.contacts-phone__num-tel {
+  color: #202020;
+}
+
 .contacts-btn {
   font-size: 14px;
   padding: 15px 30px;
@@ -1111,6 +1126,53 @@ input {
   font-weight: 600;
   line-height: 22px;
   margin-bottom: 15px;
+}
+
+.footer {
+  padding-top: 45px;
+  background: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-header {
+  margin-bottom: 41px;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/footer/footer-bg.png") center no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.footer-footer {
+  padding-top: 27px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .container {
@@ -1174,11 +1236,22 @@ input {
   .feedback-bg {
     width: 930px;
   }
+  .section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 @media (max-width: 992px) {
   .hidden-mobile {
     display: none;
+  }
+  .section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .header {
+    margin-bottom: 80px;
   }
   .main {
     -webkit-box-orient: vertical;
@@ -1267,16 +1340,26 @@ input {
 }
 
 @media (max-width: 768px) {
+  .hidden-768 {
+    display: none;
+  }
+  .section {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  .header {
+    margin-bottom: 50px;
+  }
   .header-wrap {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .header-contacts {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1287,6 +1370,20 @@ input {
   .header-contacts-phone__tel {
     font-size: 16px;
     font-weight: 700;
+    margin-right: 15px;
+  }
+  .header-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px 25px;
+  }
+  .about {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
   .about-text {
     max-width: 480px;
@@ -1382,6 +1479,7 @@ input {
   }
   .header-logo {
     width: 100px;
+    height: 26.5px;
     margin-right: 15px;
   }
   .header-contacts {
@@ -1401,7 +1499,7 @@ input {
     font-weight: 500;
   }
   .header-button {
-    padding: 6px 12px;
+    padding: 5px 30px;
     font-size: 10px;
   }
   .main {
@@ -1440,7 +1538,6 @@ input {
   }
   .main-form__input {
     width: 100%;
-    text-align: center;
   }
   .main-form__btn {
     padding: 15px 28px;
@@ -1524,6 +1621,19 @@ input {
     width: 300px;
     max-width: 500px;
   }
+  .footer {
+    padding-top: 25px;
+  }
+  .footer-header {
+    margin-bottom: 21px;
+  }
+  .footer-text {
+    font-size: 9px;
+  }
+  .footer-footer {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -1542,11 +1652,21 @@ input {
   .offer-form__input:first-child {
     margin-right: 10px;
   }
+  .hidden-m-769 {
+    display: none;
+  }
 }
 
 @media (width: 1200px) {
   .feedback-bg {
     width: 1140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-text {
+    position: relative;
+    top: -17px;
   }
 }
 /*# sourceMappingURL=style.css.map */

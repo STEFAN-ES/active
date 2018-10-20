@@ -8,15 +8,22 @@
   <meta name="author" content="Stefan Sotnikov">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=AOYOylsBAAAAfRbFRgIBxhI2WHiGdOxUPthNxHpqVhwLrmkAAAAAAAAAAADjNSFttatDvfVPNBV4KhY9Vz_rbw==&lang=ru_RU" type="text/javascript"></script>
-  <title>Active</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=AOYOylsBAAAAfRbFRgIBxhI2WHiGdOxUPthNxHpqVhwLrmkAAAAAAAAAAADjNSFttatDvfVPNBV4KhY9Vz_rbw==&lang=ru_RU"
+    type="text/javascript"></script>
+  
+    <title>Active</title>
+
 </head>
 
 <body>
+
+
+  
   <div class="main-screen">
     <div class="container">
       <header class="header">
@@ -35,13 +42,13 @@
           </div><!-- header-wrap-logo -->
 
           <div class="header-contacts">
-            <div class="header-contacts-phone">
+            <div class="header-contacts-phone hidden-576">
               <div class="header-contacts-phone__title hidden-mobile">Есть вопросы?</div>
-              <div class="header-contacts-phone__tel"><a href="tel:+75351111001" class="header-contacts-phone__link">+7
+              <div class="header-contacts-phone__tel"><a href="tel:+75351111001" class=" tel header-contacts-phone__link">+7
                   535 111 10 01</a></div>
             </div>
             <div class="header-contacts__button">
-              <button class="button header-button">Перезвоните мне!</button>
+              <button class="button header-button"><img class="hidden-m-769" src="img/icon-phone.png" alt="phone"><span class="hidden-768">Перезвоните мне!</span></button>
             </div>
           </div>
         </div>
@@ -70,9 +77,9 @@
           <!-- /.main-form__text -->
 
           <form action="#" class="main-forms">
-            <input type="text" name="user_name" class="main-form__input input input-one" placeholder="       Ваше имя"
+            <input type="text" name="user_name" class="main-form__input input input-one" placeholder="Ваше имя"
               required>
-            <input type="text" name="user_phone" class="main-form__input input input-two" placeholder="       Ваш номер телефона"
+            <input type="text" name="user_phone" class="main-form__input input input-two" placeholder="Ваш номер телефона"
               required>
           </form>
           <!-- /.main-form -->
@@ -93,26 +100,28 @@
   </div>
 
 
-  <div class="about">
+  <div class="about section">
     <div class="container">
       <h2 class="section-title about-title">О нашей компании</h2><!-- ./section-title -->
       <div class="about-wrap">
         <div class="about-text">
           <div class="about-text__descr">
-            <div class="about-text__descr-p about-text__descr-p_1">Консалтинговая компания ООО "Эктив Моней" – <span class="text-bold">партнер российского форекс-дилера ООО
+            <div class="about-text__descr-p about-text__descr-p_1">Консалтинговая компания ООО "Эктив Моней" – <span
+                class="text-bold">партнер российского форекс-дилера ООО
                 «Финанс Групп»</span>, имеющего лицензию Банка России на осуществление деятельности профессионального
-              участника рынка ценных бумаг.</div> 
-            <div class="about-text__descr-p about-text__descr-p_2"><span class="text-bold">Наша задача</span> – обучить клиентов эффективной работе с мировыми финансовыми
+              участника рынка ценных бумаг.</div>
+            <div class="about-text__descr-p about-text__descr-p_2"><span class="text-bold">Наша задача</span> – обучить
+              клиентов эффективной работе с мировыми финансовыми
               площадками, с помощью уникальной авторской методики.
               Мы ведем работу по 2 основным направлениям:</div>
           </div>
           <!-- /.about-text__descr -->
           <div class="about-text__features">
-            
-            
+
+
             <div class="about-text__features-block">
               <div class="about-text__features-block_rectangle about-text__features-block_rectangle-1">
-                  <!-- здесь прямоугольник -->
+                <!-- здесь прямоугольник -->
               </div>
               <!-- /.about-text__features-block_rectangle -->
               <div class="about-text__features-block_img">
@@ -120,36 +129,36 @@
                 <div class="about-text__features-block_text">Обучение с нуля</div>
               </div>
               <!-- /.about-text__features-block_img -->
-              
-                <!-- /.about-text__features-block_text -->
+
+              <!-- /.about-text__features-block_text -->
             </div>
             <!-- /.about-text__features_block -->
-              
-            
-            
-            
+
+
+
+
             <div class="about-text__features-block">
-                <div class="about-text__features-block_rectangle about-text__features-block_rectangle-2">
-                   <!-- здесь прямоугольник --> 
-                </div>
-                <!-- /.about-text__features-block_rectangle -->
-                <div class="about-text__features-block_img">
-                  <img src="img/about/photo-2.jpg" alt="#">
-                  <div class="about-text__features-block_text">Повышение квалификации</div>
-                </div>
-                <!-- /.about-text__features-block_img -->
-                
-                <!-- /.about-text__features-block_text -->
+              <div class="about-text__features-block_rectangle about-text__features-block_rectangle-2">
+                <!-- здесь прямоугольник -->
               </div>
-              <!-- /.about-text__features_block -->
-          
+              <!-- /.about-text__features-block_rectangle -->
+              <div class="about-text__features-block_img">
+                <img src="img/about/photo-2.jpg" alt="#">
+                <div class="about-text__features-block_text">Повышение квалификации</div>
+              </div>
+              <!-- /.about-text__features-block_img -->
+
+              <!-- /.about-text__features-block_text -->
+            </div>
+            <!-- /.about-text__features_block -->
+
           </div>
           <!-- /.about-text__features -->
         </div>
         <!-- /.about-text -->
 
         <div class="about-video">
-            <video class="about-video__main" src="video/consalting.mp4" controls poster="img/about/video-bg.png"></video>
+          <video class="about-video__main" src="video/consalting.mp4" controls poster="img/about/video-bg.png"></video>
         </div>
 
       </div>
@@ -158,17 +167,18 @@
     <!-- ./container -->
   </div>
 
-  <div class="features">
+  <div class="features section">
     <div class="container">
       <h2 class="section-title features-title">Обучение трейдеров с нуля за 0 рублей!</h2>
       <div class="features-text">
-        Наша уникальная <span class="text-bold">бесплатная программа</span> обучения трейдеров состоит из 10-ти часовых занятий, в которых мы изучим теорию и заркепим ее практике на демо-счете.
+        Наша уникальная <span class="text-bold">бесплатная программа</span> обучения трейдеров состоит из 10-ти часовых
+        занятий, в которых мы изучим теорию и заркепим ее практике на демо-счете.
         <span class="features-text__subtitle">По окончанию программы, <span class="text-bold">Вы будете уметь:</span></span>
       </div>
       <!-- ./features-text -->
 
       <div class="features-wrap">
-        
+
         <div class="features-block">
           <div class="features-block__img"><img src="img/features/icon-1.png" alt="#" class="features-icon"></div>
           <!-- /.features-block__img -->
@@ -176,8 +186,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-        
-        
+
+
         <div class="features-block">
           <div class="features-block__img"><img src="img/features/icon-2.png" alt="#" class="features-icon"></div>
           <!-- /.features-block__img -->
@@ -185,17 +195,18 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-        
-        
+
+
         <div class="features-block">
           <div class="features-block__img"><img src="img/features/icon-3.png" alt="#" class="features-icon"></div>
           <!-- /.features-block__img -->
-          <div class="features-block__text">Разбиратся в событиях на мировых финансовых рынках и сможете самостоятельно их прогнозировать</div>
+          <div class="features-block__text">Разбиратся в событиях на мировых финансовых рынках и сможете самостоятельно
+            их прогнозировать</div>
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-        
-        
+
+
         <div class="features-block">
           <div class="features-block__img"><img src="img/features/icon-4.png" alt="#" class="features-icon"></div>
           <!-- /.features-block__img -->
@@ -203,8 +214,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-        
-        
+
+
         <div class="features-block">
           <div class="features-block__img"><img src="img/features/icon-5.png" alt="#" class="features-icon"></div>
           <!-- /.features-block__img -->
@@ -212,8 +223,8 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-        
-        
+
+
         <div class="features-block">
           <div class="features-block__img"><img src="img/features/icon-6.png" alt="#" class="features-icon"></div>
           <!-- /.features-block__img -->
@@ -221,23 +232,23 @@
           <!-- /.features-block__text -->
         </div>
         <!-- /.features-block -->
-      
+
       </div>
       <!-- /.features-wrap -->
 
       <div class="features-button">
         <button class="button features-btn">Получить консультацию о курсе</button>
-         <!-- /.button -->
-        </div>
+        <!-- /.button -->
+      </div>
       <!-- /.features-button -->
     </div>
   </div>
-  
-  <div class="answerWhy">
+
+  <div class="answerWhy section">
     <div class="container">
       <h2 class="section-title">Почему стоит выбрать наше обучение?</h2>
       <div class="answerWhy-block__wrap">
-        
+
         <div class="answerWhy-block">
           <div class="answerWhy-block__number"><span class="text-block">10</span></div>
           <!-- /.answerWhy-block__number -->
@@ -245,8 +256,8 @@
           <!-- /.answerWhy-block__text -->
         </div>
         <!-- /.answerWhy-block -->
-        
-        
+
+
         <div class="answerWhy-block">
           <div class="answerWhy-block__number"><span class="text-block">5</span></div>
           <!-- /.answerWhy-block__number -->
@@ -254,8 +265,8 @@
           <!-- /.answerWhy-block__text -->
         </div>
         <!-- /.answerWhy-block -->
-        
-        
+
+
         <div class="answerWhy-block">
           <div class="answerWhy-block__number"><span class="text-block">100</span></div>
           <!-- /.answerWhy-block__number -->
@@ -263,7 +274,7 @@
           <!-- /.answerWhy-block__text -->
         </div>
         <!-- /.answerWhy-block -->
-      
+
       </div>
       <!-- ./answerWhy-block__wrap -->
 
@@ -273,13 +284,14 @@
           <!-- /.sertificate-img -->
         </div>
         <!-- /.sertificate-wrap -->
-        <div class="sertificate-text">Так же по окончанию обучения Вы получите сертификат о прохождении курса и доступ к закрытой рассылке трейдеров по аналитике и инсайтам.</div>
+        <div class="sertificate-text">Так же по окончанию обучения Вы получите сертификат о прохождении курса и доступ
+          к закрытой рассылке трейдеров по аналитике и инсайтам.</div>
         <!-- /.sertificate-text -->
       </div>
     </div>
   </div>
 
-  <div class="recruitment">
+  <div class="recruitment section">
     <div class="container">
       <div class="recruitment-wrap">
         <div class="recruitment-text">
@@ -290,7 +302,7 @@
         </div>
         <!-- /.recruitment-text -->
         <div class="recruitment-button">
-          <button class="button recruitment-btn">Забронировать место!</button> 
+          <button class="button recruitment-btn">Забронировать место!</button>
           <!-- /.button recruitment-btn -->
         </div>
         <!-- /.recruitment-button -->
@@ -301,30 +313,30 @@
   </div>
   <!-- ./recruitment -->
 
-  <div class="feedback">
+  <div class="feedback section">
     <div class="container">
       <div class="feedback-bg hidden-mobile"><img src="img/slider/bg.png" alt=""></div>
       <h2 class="section-title feedback-title">Отзывы наших учеников</h2>
       <!-- /.section-title feedback-title -->
       <div class="feedback-wrap">
-      <div class="feedback-slider">
-        
-        <div class="feedback-slider__top">
-          <div class="item">
-            <div class="feedback-slider__top-img"><img src="img/slider/img-1.png" alt="#"></div>
-            <!-- /.feedback-slider__top-img -->
-            <div class="feedback-slider__top-text">
-              <div class="feedback-slider__top-text__title">Ольга Фролова</div>
-              <!-- /.feedback-slider__top-text__title -->
-              <div class="feedback-slider__top-text__subtitle">23 года. Москва</div>
-              <!-- /.feedback-slider__top-text__subtitle -->
+        <div class="feedback-slider">
+
+          <div class="feedback-slider__top">
+            <div class="item">
+              <div class="feedback-slider__top-img"><img src="img/slider/img-1.png" alt="#"></div>
+              <!-- /.feedback-slider__top-img -->
+              <div class="feedback-slider__top-text">
+                <div class="feedback-slider__top-text__title">Ольга Фролова</div>
+                <!-- /.feedback-slider__top-text__title -->
+                <div class="feedback-slider__top-text__subtitle">23 года. Москва</div>
+                <!-- /.feedback-slider__top-text__subtitle -->
+              </div>
+              <!-- /.feedback-slider__top-text -->
             </div>
-            <!-- /.feedback-slider__top-text -->
-          </div>
-          <!-- /.item -->
+            <!-- /.item -->
 
 
-          <div class="item">
+            <div class="item">
               <div class="feedback-slider__top-img"><img src="img/slider/img-2.png" alt="#"></div>
               <!-- /.feedback-slider__top-img -->
               <div class="feedback-slider__top-text">
@@ -337,38 +349,35 @@
             </div>
             <!-- /.item -->
 
-            
+
             <div class="item">
-                <div class="feedback-slider__top-img"><img src="img/slider/img-3.png" alt="#"></div>
-                <!-- /.feedback-slider__top-img -->
-                <div class="feedback-slider__top-text">
-                  <div class="feedback-slider__top-text__title">Наталья Емельянова</div>
-                  <!-- /.feedback-slider__top-text__title -->
-                  <div class="feedback-slider__top-text__subtitle">19 лет. Самара</div>
-                  <!-- /.feedback-slider__top-text__subtitle -->
-                </div>
-                <!-- /.feedback-slider__top-text -->
+              <div class="feedback-slider__top-img"><img src="img/slider/img-3.png" alt="#"></div>
+              <!-- /.feedback-slider__top-img -->
+              <div class="feedback-slider__top-text">
+                <div class="feedback-slider__top-text__title">Наталья Емельянова</div>
+                <!-- /.feedback-slider__top-text__title -->
+                <div class="feedback-slider__top-text__subtitle">19 лет. Самара</div>
+                <!-- /.feedback-slider__top-text__subtitle -->
               </div>
-              <!-- /.item -->
-        </div>
-        <!-- /.feedback-slider__top -->
-        
-        
-        <div class="feedback-slider__bottom">
-          <div class="item">
-            <div class="feedback-slider__bottom-text">
-                <div class="feedback-slider__bottom-text-p">В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</div>
-                <div class="feedback-slider__bottom-text-p">Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</div>
+              <!-- /.feedback-slider__top-text -->
             </div>
-            <!-- /.feedback-slider__bottom-text -->
+            <!-- /.item -->
           </div>
-          <!-- /.item -->
+          <!-- /.feedback-slider__top -->
 
 
-          <div class="item">
+          <div class="feedback-slider__bottom">
+            <div class="item">
               <div class="feedback-slider__bottom-text">
-                  <div class="feedback-slider__bottom-text-p">В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</div>
-                  <div class="feedback-slider__bottom-text-p">Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</div>
+                <div class="feedback-slider__bottom-text-p">В общем учился сам и потихоньку сливал депозит. В начале
+                  июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил
+                  беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой
+                  депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно
+                  заработать в три раза больше чем сумма на которую я пополнюсь.</div>
+                <div class="feedback-slider__bottom-text-p">Я взял кредитную карту в банке и перевел все средства 300
+                  000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету
+                  0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их
+                  нужно отрабатывать в 20-ти кратном размере</div>
               </div>
               <!-- /.feedback-slider__bottom-text -->
             </div>
@@ -376,81 +385,108 @@
 
 
             <div class="item">
-                <div class="feedback-slider__bottom-text">
-                    <div class="feedback-slider__bottom-text-p">В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</div>
-                    <div class="feedback-slider__bottom-text-p">Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</div>
-                </div>
-                <!-- /.feedback-slider__bottom-text -->
+              <div class="feedback-slider__bottom-text">
+                <div class="feedback-slider__bottom-text-p">В общем учился сам и потихоньку сливал депозит. В начале
+                  июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил
+                  беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой
+                  депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно
+                  заработать в три раза больше чем сумма на которую я пополнюсь.</div>
+                <div class="feedback-slider__bottom-text-p">Я взял кредитную карту в банке и перевел все средства 300
+                  000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету
+                  0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их
+                  нужно отрабатывать в 20-ти кратном размере</div>
               </div>
-              <!-- /.item -->
-        </div>
-        <!-- /.feedback-slider__bottom -->
-     
-      </div>
-      <!-- /.feedback-slider -->
+              <!-- /.feedback-slider__bottom-text -->
+            </div>
+            <!-- /.item -->
 
-      <div class="feedback-button">
-        <button class="button feedback-btn">Оставить отзыв</button>
-         <!-- /.button feedback-btn -->
+
+            <div class="item">
+              <div class="feedback-slider__bottom-text">
+                <div class="feedback-slider__bottom-text-p">В общем учился сам и потихоньку сливал депозит. В начале
+                  июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и предложил
+                  беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой
+                  депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно
+                  заработать в три раза больше чем сумма на которую я пополнюсь.</div>
+                <div class="feedback-slider__bottom-text-p">Я взял кредитную карту в банке и перевел все средства 300
+                  000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету
+                  0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их
+                  нужно отрабатывать в 20-ти кратном размере</div>
+              </div>
+              <!-- /.feedback-slider__bottom-text -->
+            </div>
+            <!-- /.item -->
+          </div>
+          <!-- /.feedback-slider__bottom -->
+
         </div>
-      <!-- /.feedback-button -->
-    </div>
+        <!-- /.feedback-slider -->
+
+        <div class="feedback-button">
+          <button class="button feedback-btn">Оставить отзыв</button>
+          <!-- /.button feedback-btn -->
+        </div>
+        <!-- /.feedback-button -->
+      </div>
     </div>
     <!-- /.container -->
   </div>
   <!-- /.feedback -->
 
-  <div class="services">
+  <div class="services section">
     <div class="container">
       <h2 class="section-title services-title">Другие наши услуги</h2>
       <!-- /.section-title services-title -->
       <div class="services-wrap">
-        
+
         <div class="services-block">
           <div class="services-block__img"><img src="img/services/img-1.jpg" alt="#"></div>
           <!-- /.services-block__img -->
           <div class="services-block__text">
             <div class="services-block__text-title">Инвестиции</div>
-          <!-- /.services-block__text-title -->
-          <div class="services-block__text-descr">Мы составим для Вас персональный<br> финансовый план по<br> инвестированию</div>
-          <!-- /.services-block__text-descr -->
-        </div>
+            <!-- /.services-block__text-title -->
+            <div class="services-block__text-descr">Мы составим для Вас персональный<br> финансовый план по<br>
+              инвестированию</div>
+            <!-- /.services-block__text-descr -->
+          </div>
           <!-- /.services-block__text -->
           <div class="services-block__button"><button class="button services-btn">Узнать</button></div>
           <!-- /.services-block__button -->
         </div>
         <!-- /.services-block -->
-        
+
         <div class="services-block">
           <div class="services-block__img"><img src="img/services/img-2.jpg" alt="#"></div>
           <!-- /.services-block__img -->
           <div class="services-block__text">
             <div class="services-block__text-title">Доверительное управление</div>
-          <!-- /.services-block__text-title -->
-          <div class="services-block__text-descr">Профессиональные трейдеры компании<br> готовы управлять Вашими<br> финансами</div>
-          <!-- /.services-block__text-descr -->
-        </div>
+            <!-- /.services-block__text-title -->
+            <div class="services-block__text-descr">Профессиональные трейдеры компании<br> готовы управлять Вашими<br>
+              финансами</div>
+            <!-- /.services-block__text-descr -->
+          </div>
           <!-- /.services-block__text -->
           <div class="services-block__button"><button class="button services-btn">Узнать</button></div>
           <!-- /.services-block__button -->
         </div>
         <!-- /.services-block -->
-        
+
         <div class="services-block">
           <div class="services-block__img"><img src="img/services/img-3.jpg" alt="#"></div>
           <!-- /.services-block__img -->
           <div class="services-block__text">
             <div class="services-block__text-title">Рынки криптовалюты</div>
-          <!-- /.services-block__text-title -->
-          <div class="services-block__text-descr">Обучение торговли и управление<br> финансами и торговлей на рынках<br> криптовалюты и ICO</div>
-          <!-- /.services-block__text-descr -->
-        </div>
+            <!-- /.services-block__text-title -->
+            <div class="services-block__text-descr">Обучение торговли и управление<br> финансами и торговлей на рынках<br>
+              криптовалюты и ICO</div>
+            <!-- /.services-block__text-descr -->
+          </div>
           <!-- /.services-block__text -->
           <div class="services-block__button"><button class="button services-btn">Узнать</button></div>
           <!-- /.services-block__button -->
         </div>
         <!-- /.services-block -->
-     
+
       </div>
       <!-- /.services-wrap -->
     </div>
@@ -458,19 +494,19 @@
   </div>
   <!-- /.services -->
 
-  <div class="offer">
+  <div class="offer section">
     <div class="container">
       <h2 class="section-title offer-title">Остались вопросы?</h2>
       <div class="offer-wrap">
         <div class="offer-subtitle">Задайте их профессиональному трейдеру!</div>
         <!-- ./section-subtitle -->
         <div class="offer-form">
-            <form action="#" class="offer-forms">
-                <input type="text" name="user_name" class="input input-one offer-form__input" placeholder="       Ваше имя"
-                  required>
-                <input type="text" name="user_phone" class="input input-two offer-form__input" placeholder="       Ваш номер телефона"
-                  required>
-              </form>
+          <form action="#" class="offer-forms">
+            <input type="text" name="user_name" class="input input-one offer-form__input" placeholder="Ваше имя"
+              required>
+            <input type="text" name="user_phone" class="input input-two offer-form__input" placeholder="Ваш номер телефона"
+              required>
+          </form>
         </div>
         <!-- ./offer-form -->
         <div class="offer-button">
@@ -480,16 +516,18 @@
     </div>
   </div>
 
-  <div class="contacts">
+  <div class="contacts section">
     <div class="container">
       <h2 class="section-title contacts-title">Где проходит обучение?</h2>
       <!-- /.section-title contacts-title -->
 
       <div class="contacts-wrap">
-        <div class="contacts-map" id="map"><!-- Здесь будет карта --></div>
+        <div class="contacts-map" id="map">
+          <!-- Здесь будет карта -->
+        </div>
         <!-- /.contacts-map -->
-        
-        
+
+
         <div class="contacts-text">
 
           <div class="contacts-adress">
@@ -511,7 +549,7 @@
             <div class="contacts-phone__num">
               <div class="contacts-phone__num-img"><img src="img/map/phone.png" alt="#"></div>
               <!-- /.contacts-phone__num-img -->
-              <div class="contacts-phone__num-text">+7 (535) 111-10-01</div>
+              <div class="contacts-phone__num-text"><a href="tel:+75351111001" class="tel contacts-phone__num-tel">+7 (535) 111-10-01</a></div>
               <!-- /.contacts-phone__num-text -->
             </div>
             <!-- /.contacts-phone__num -->
@@ -525,7 +563,7 @@
 
         </div>
         <!-- /.contacts-text -->
-      
+
       </div>
       <!-- /.contacts-wrap -->
 
@@ -533,7 +571,49 @@
     <!-- /.cotainer -->
   </div>
   <!-- /.contacts -->
-  
+
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-header">
+        <div class="header-wrap">
+
+          <div class="header-wrap-logo">
+            <div class="header-logo">
+              <img src="img/header/logo.png" alt="#">
+            </div>
+
+            <div class="header-text hidden-mobile">
+              Обучаем зарабатывать и инвестировать<br>
+              на финансовых рынках с минимумом риска
+            </div>
+          </div><!-- header-wrap-logo -->
+
+          <div class="header-contacts">
+            <div class="header-contacts-phone hidden-576">
+              <div class="header-contacts-phone__title hidden-mobile">Есть вопросы?</div>
+              <div class="header-contacts-phone__tel"><a href="tel:+75351111001" class="tel header-contacts-phone__link">+7
+                  535 111 10 01</a></div>
+            </div>
+            <div class="header-contacts__button">
+              <button class="button header-button"><img class="hidden-m-769" src="img/icon-phone.png" alt="phone"><span class="hidden-768">Перезвоните мне!</span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ./footer-header -->
+      </div>
+      <div class="footer-footer">
+        <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-text">&copy; www.activemoney.ru 2008-2017. Все права защищены.</div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
@@ -542,7 +622,6 @@
   <script src="slick/slick.min.js"></script>
 
   <script>
-    
     $('.feedback-slider__top').slick({
       arrows: true,
       slidesToShow: 1,
@@ -557,40 +636,39 @@
       slidesToScroll: 1,
       asNavFor: '.feedback-slider__top'
     });
-
   </script>
   <script>
     ymaps.ready(function () {
-   var myMap = new ymaps.Map('map', {
-           center: [55.725567, 37.646549],
-           Mark: [55.725567, 37.646549],
-           zoom:15
-       }, {
-           searchControlProvider: 'yandex#search'
-       }),
+      var myMap = new ymaps.Map('map', {
+          center: [55.725567, 37.646549],
+          Mark: [55.725567, 37.646549],
+          zoom: 15
+        }, {
+          searchControlProvider: 'yandex#search'
+        }),
 
-       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-           hintContent: 'Мы тут',
-           balloonContent: 'Наш офис'
-       }, {
-           // Опции.
-           // Необходимо указать данный тип макета.
-           iconLayout: 'default#image',
-           // Своё изображение иконки метки.
-           iconImageHref: 'img/map/pin.png',
-           // Размеры метки.
-           iconImageSize: [50, 50],
-           // Смещение левого верхнего угла иконки относительно
-           // её "ножки" (точки привязки).
-           iconImageOffset: [-25, -25]
-       });
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Мы тут',
+          balloonContent: 'Наш офис'
+        }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/map/pin.png',
+          // Размеры метки.
+          iconImageSize: [50, 50],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-25, -25]
+        });
 
-   myMap.behaviors.disable('scrollZoom');
-   myMap.behaviors.disable('drag');
-   myMap.geoObjects
-       .add(myPlacemark)
-});
- </script>
+      myMap.behaviors.disable('scrollZoom');
+      myMap.behaviors.disable('drag');
+      myMap.geoObjects
+        .add(myPlacemark)
+    });
+  </script>
 </body>
 
 </html>
